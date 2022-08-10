@@ -51,6 +51,7 @@ class Dev(Configuration):
       'django.contrib.staticfiles',
       'crispy_forms',
       'crispy_bootstrap5',
+      'blango_auth',
       'blog',
       'debug_toolbar',
   ]
@@ -118,6 +119,9 @@ class Dev(Configuration):
       'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
       'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
   ]
+
+  # custom user model
+  AUTH_USER_MODEL = "blango_auth.User"  
 
 
   # Internationalization
