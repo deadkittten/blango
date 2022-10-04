@@ -55,7 +55,7 @@ class Dev(Configuration):
       'crispy_bootstrap5',
       'blango_auth',
       'blog',
-      'debug_toolbar',
+#      'debug_toolbar',
       'allauth',
       'allauth.account',
       'allauth.socialaccount',
@@ -119,7 +119,7 @@ class Dev(Configuration):
   
 
   MIDDLEWARE = [
-      'debug_toolbar.middleware.DebugToolbarMiddleware',
+      #'debug_toolbar.middleware.DebugToolbarMiddleware',
       'django.middleware.security.SecurityMiddleware',
       'django.contrib.sessions.middleware.SessionMiddleware',
       'django.middleware.common.CommonMiddleware',
